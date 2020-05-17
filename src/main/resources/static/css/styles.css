@@ -1,0 +1,35 @@
+body {
+font-family: sans-serif;
+background-color: white;
+}
+
+.nav-bar {
+text-align: center;
+background-color: #00D90E;
+height: 600 px;
+padding top: 35 px;
+padding bottom: 35 px;
+padding left: 10 px;
+padding right: 10 px;
+margin: 0;
+font-color: white;
+
+}
+
+.logo {
+text-align: center;
+padding-top: 35 px;
+padding-bottom: 15px;
+}
+
+.nav-bar2 {
+background-color: #00bab3;
+height: 100 px;
+padding top: 35 px;
+padding bottom: 35 px;
+padding left: 10 px;
+padding right: 10 px;
+margin: 0;
+font-color: white;
+
+}

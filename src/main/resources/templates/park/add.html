@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body>
+
+<div th:replace="fragments :: navigation"></div>
+
+<h1 th:text="${title}"></h1>
+
+<form method="post" style="max-width:600px;">
+    <div class="form-group">
+        <label for="name-field">Park Name</label>
+        <input class="form-control" id="name-field" type="text" name="parkName" />
+    </div>
+
+    <div class="form-group">
+        <label for="address-field">Address</label>
+        <input class="form-control" id="address-field" type="text" name="parkAddress" />
+    </div>
+
+    <div class="form-group">
+        <label for="zipCode-field">Zip Code</label>
+        <input class="form-control" id="zipCode-field" type="text" name="parkZipCode" />
+    </div>
+
+<!--    <div class="form-group">-->
+<!--        <label id="amenities-field">Amenities</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="inclusiveField" name="parkAmenities" type="checkbox" value="">Inclusive Play</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="playgroundField" name="parkAmenities" type="checkbox" value="">Playground</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="walkingField" name="parkAmenities" type="checkbox" value="">Walking Trail</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="dogField" name="parkAmenities" type="checkbox" value="">Dog Park</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="basketballField" name="parkAmenities" type="checkbox" value="">Basketball Court</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="baseballField" name="parkAmenities" type="checkbox" value="">Baseball Field</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="soccerField" name="parkAmenities" type="checkbox" value="">Soccer Field</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="tennisField" name="parkAmenities" type="checkbox" value="">Tennis Field</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="restroomField" name="parkAmenities" type="checkbox" value="">Restrooms</label>-->
+<!--        <label class="checkbox-inline"><input class="form-control" id="portableField" name="parkAmenities" type="checkbox" value="">Port-a-Potty</label>-->
+<!--    </div>-->
+
+    <input type="submit" value="Add Park" />
+</form>
+
+</body>
+</html>

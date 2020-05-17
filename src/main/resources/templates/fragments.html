@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script type="text/javascript" src="@{/js/script.js}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div th:fragment="navigation">
+    <nav class="nav-bar">
+    <img th:src="@{/images/FindNPlay300px.png}" class="logo" alt="Find and Play" />
+    </nav>
+
+    <nav class="nav-bar2">
+        <a href="/park">List</a>
+        <a href="/park/add">Add</a>
+    </nav>
+</div>
+
+<h1 th:text="${title}"></h1>
+</body>
+</html>
